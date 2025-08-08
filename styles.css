@@ -58,3 +58,7 @@ div {
 .footer {
   color: #dfd0b8;
 }
+
+.oculto {
+  display: none;
+}

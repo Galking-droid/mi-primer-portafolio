@@ -1,12 +1,20 @@
 let titulo = document.getElementById("titulo-principal");
 
-let boton = document.getElementById("boton-color");
+let botonTitulo = document.getElementById("boton-color");
+
+let habilidades = document.querySelector("ul");
+
+let botonHabilidades = document.getElementById("boton-habilidades");
 
 function cambiarColor() {
   const color = "#" + Math.floor(Math.random() * 16777215).toString(16);
   titulo.style.color = color;
 }
 
-boton.addEventListener("click", cambiarColor);
+botonTitulo.addEventListener("click", cambiarColor);
 
-titulo.textContent = "¡ Hola, bienvenido a mi portafolio !";
+function alternarHabilidades() {
+  habilidades.classList.toggle("oculto");
+}
+
+botonHabilidades.addEventListener("click", alternarHabilidades);
