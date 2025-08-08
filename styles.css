@@ -26,6 +26,14 @@ h2 {
   padding-bottom: 5px;
 }
 
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
 p {
   color: #393e46;
   font-size: 14px;
@@ -47,6 +55,43 @@ li {
   color: #dfd0b8;
   font-size: 14px;
   font-weight: 300;
+}
+
+#proyectos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.proyecto-item {
+  background-color: #414d5e;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.proyecto-item h3 {
+  color: #dfd0b8;
+  font-size: 1.2em;
+}
+
+.proyecto-item p {
+  color: #dfd0b8;
+  font-size: 1em;
+  flex-grow: 1;
+}
+
+.proyecto-item a {
+  color: #dfd0b8;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.proyecto-item a:hover {
+  text-decoration: underline;
 }
 
 div {
