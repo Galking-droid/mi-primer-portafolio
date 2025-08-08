@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+body {
+  background-color: #222831;
+  font-family: Sansation, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: #dfd0b8;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+section {
+  background-color: #948979;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #393e46;
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+p {
+  color: #393e46;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #414d5e;
+  padding: 8px 12px;
+  border-radius: 20px;
+  color: #dfd0b8;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer {
+  color: #dfd0b8;
+}
