@@ -4,51 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Mi Portafolio - Joseph</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Joseph Gama | Portafolio de Desarrollo Web</title>
   </head>
   <body>
     <header>
-      <h1 id="titulo-principal">¡Hola, soy Joseph!</h1>
-      <button id="boton-color">Cambiar color de título</button>
+      <nav>
+        <ul>
+          <li><a href="#acerca-de-mi">Acerca de mí</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <h1 id="titulo-principal">Hola, soy Joseph Gama</h1>
+      <p>
+        Desarrollador Full-Stack en formación con experiencia en sistemas y
+        datos.
+      </p>
     </header>
     <main>
-      <section>
-        <p>Futuro programador y este es mi portafolio.</p>
+      <section id="acerca-de-mi">
         <h2>Acerca de mí</h2>
-        <img
-          class="foto-perfil"
-          src="Joseph-Photo.jpg"
-          alt="Joseph Gama wearing a gray collared shirt, standing against a light blue background, appearing neutral and professional"
-        />
-        <p>
-          Soy técnico en sistemas con experiencia en soporte y análisis de
-          datos. Futuro programador full-stacks.
-        </p>
+        <div class="acerca-de-mi-contenido">
+          <img
+            class="foto-perfil"
+            src="Joseph-Photo.jpg"
+            alt="Joseph Gama wearing a gray collared shirt, standing against a light blue background, appearing neutral and professional"
+          />
+          <p>
+            Actualmente, me encuentro en una fase de **transición profesional
+            hacia el desarrollo web full-stack**, combinando mi sólida base como
+            **Técnico en Sistemas** con el aprendizaje de tecnologías de
+            programación modernas. Mi experiencia previa en soporte técnico y en
+            el manejo de datos me ha dotado de una perspectiva única para crear
+            soluciones digitales que son tanto robustas como eficientes. Estoy
+            enfocado en construir aplicaciones funcionales y escalables, y este
+            portafolio es un reflejo de ese proceso de aprendizaje.
+          </p>
+        </div>
       </section>
-      <section>
+      <section id="habilidades">
         <h2>Habilidades</h2>
-        <button id="boton-habilidades">Mostrar habilidades</button>
+        <p>
+          Mi conjunto de habilidades se centra en el desarrollo web,
+          complementado por mi experiencia técnica previa.
+        </p>
         <ul>
-          <li>Soporte</li>
-          <li>Anális de datos</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript (ES6+)</li>
+          <li>GIT / GitHub</li>
+          <li>Bases de Datos SQL</li>
+          <li>Análisis de Datos</li>
+          <li>Soporte Técnico</li>
         </ul>
       </section>
-      <section>
-        <h2>Mis Proyectos</h2>
+      <section id="proyectos">
+        <h2>Proyectos Destacados</h2>
         <div id="proyectos-container"></div>
       </section>
-      <section>
-        <h2>Contacto</h2>
-        <div>
+      <section id="contacto">
+        <h2>Conectemos</h2>
+        <p>
+          Estoy abierto a nuevas oportunidades y colaboraciones. No dudes en
+          contactarme para discutir cómo mis habilidades pueden aportar valor a
+          tu equipo.
+        </p>
+        <div class="enlaces-contacto">
           <a href="https://linkedin.com/in/joseph-gama" target="_blank"
-            >Visita mi LinkedIn</a
+            >LinkedIn</a
           >
-          <a href="https://github.com/Galking-droid" target="_blank"
-            >Visita mi GitHub</a
-          >
+          <a href="https://github.com/Galking-droid" target="_blank">GitHub</a>
         </div>
       </section>
     </main>

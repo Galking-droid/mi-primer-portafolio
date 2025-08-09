@@ -1,109 +1,245 @@
-@import url("https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+:root {
+  --color-fondo: #1a1d23;
+  --color-texto-claro: #e6e6e6;
+  --color-acento: #4caf50;
+  --color-secundario: #2d323a;
+  --color-terciario: #388e3c;
+}
 
 body {
-  background-color: #222831;
-  font-family: Sansation, sans-serif;
+  background-color: var(--color-fondo);
+  font-family: "Montserrat", sans-serif;
   padding: 20px;
 }
 
-h1 {
-  color: #dfd0b8;
-  font-size: 30px;
-  font-weight: 700;
+h1,
+h2,
+h3,
+p,
+li {
+  color: var(--color-texto-claro);
 }
 
 section {
-  background-color: #948979;
+  background-color: var(--color-secundario);
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
 }
 
-h2 {
-  color: #393e46;
-  font-size: 18px;
-  font-weight: 400;
-  padding-bottom: 5px;
+/* Estilos de encabezado y navegación */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+header nav a {
+  color: var(--color-texto-claro);
+  text-decoration: none;
+  font-weight: 500;
+  background-color: var(--color-secundario);
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: var(--color-acento);
+  background-color: var(--color-terciario);
+}
+
+#titulo-principal {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+/* Estilos de la sección "Acerca de mí" (por defecto para móvil) */
+#acerca-de-mi {
+  text-align: center;
+}
+
+#acerca-de-mi h2 {
+  margin-bottom: 20px;
+}
+
+#acerca-de-mi p {
+  text-align: justify;
+}
+
+/* Estilos para la foto de perfil */
 .foto-perfil {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
+  border: 3px solid var(--color-acento);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-p {
-  color: #393e46;
-  font-size: 14px;
-  font-weight: 300;
-}
-
+/* Estilos para las habilidades */
 ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
   list-style: none;
   padding: 0;
 }
 
 li {
-  background-color: #414d5e;
+  background-color: var(--color-secundario);
   padding: 8px 12px;
   border-radius: 20px;
-  color: #dfd0b8;
+  color: var(--color-texto-claro);
   font-size: 14px;
   font-weight: 300;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
+li:hover {
+  background-color: var(--color-terciario);
+  box-shadow: 0 0 10px var(--color-acento);
+  transform: translateY(-2px);
+}
+
+/* Estilos para las tarjetas de proyectos */
 #proyectos-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
 
 .proyecto-item {
-  background-color: #414d5e;
+  background-color: var(--color-secundario);
   padding: 20px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer; /* Añadido cursor para toda la tarjeta */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra permanente para el efecto de tarjeta */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el cursor */
 }
 
 .proyecto-item h3 {
-  color: #dfd0b8;
+  color: var(--color-texto-claro);
   font-size: 1.2em;
 }
 
 .proyecto-item p {
-  color: #dfd0b8;
+  color: var(--color-texto-claro);
   font-size: 1em;
   flex-grow: 1;
 }
 
 .proyecto-item a {
-  color: #dfd0b8;
+  color: var(--color-acento);
   text-decoration: none;
   font-weight: bold;
   margin-top: 10px;
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid var(--color-acento);
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 .proyecto-item a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  background-color: var(--color-acento);
+  color: var(--color-fondo);
 }
 
-div {
+/* Estilos para los enlaces de contacto */
+.enlaces-contacto {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
-.footer {
-  color: #dfd0b8;
+.enlaces-contacto a {
+  background-color: var(--color-acento);
+  color: var(--color-fondo);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-.oculto {
-  display: none;
+.enlaces-contacto a:hover {
+  background-color: var(--color-terciario);
+}
+
+/* Estilos de pie de página */
+.footer {
+  color: var(--color-texto-claro);
+  text-align: center;
+}
+
+/* --- Media Queries (Adaptación a pantallas más grandes) --- */
+@media (min-width: 768px) {
+  body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  header p {
+    font-size: 1.1em;
+  }
+
+  #acerca-de-mi {
+    text-align: left;
+  }
+
+  .acerca-de-mi-contenido {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .foto-perfil {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+
+  #habilidades ul {
+    justify-content: flex-start;
+  }
+
+  #proyectos-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .enlaces-contacto a {
+    font-size: 1.1em;
+  }
 }
