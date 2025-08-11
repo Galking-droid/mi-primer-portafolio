@@ -35,9 +35,9 @@ Este es un proyecto estático de front-end. No necesita ninguna instalación o c
 
 Si tienes alguna pregunta o quieres conectar, no dudes en contactarme a través de mis redes sociales:
 
-- [**LinkedIn**](https://linkedin.com/in/joseph-gama)
-- [**GitHub**](https://github.com/Galking-droid)
-- [**Email**](gama.joseph@gmail.com)
+- [**LinkedIn**](https://linkedin.com/in/joseph-gama){:target="\_blank"}
+- [**GitHub**](https://github.com/Galking-droid){:target="\_blank"}
+- [**Email**](mailto:gama.joseph@gmail.com)
 
 ---
 
